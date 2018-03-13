@@ -2,23 +2,10 @@
   "name": "expressio",
   "version": "1.0.0",
   "description": "Expressio will help you to create a backend RESTFul including basic CRUD functionalities with NodeJS, Express.js, Mongoose",
+  "main": "app.js",
   "bin": {
     "expressio": "./bin/expressio.js"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Osman Goni Nahid<osmangoni.se@gmail.com>",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/osmangoninahid/expressio.git"
-  },
-  "keywords": ["nodejs", "generator", "express", "rest-api", "restful", "mongoose"],
-  "bugs": {
-    "url": "https://github.com/osmangoninahid/expressio/issues"
-  },
-  "homepage": "https://github.com/osmangoninahid/expressio#readme",
   "dependencies": {
     "args": "^3.0.4",
     "chalk": "^2.1.0",
@@ -29,5 +16,20 @@
     "lodash": "^4.17.4",
     "ora": "^2.0.0",
     "pluralize": "^7.0.0"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osmangoninahid/expressio.git"
+  },
+  "keywords": ["nodejs", "generator", "express", "rest-api", "restful", "mongoose"],
+  "author": "Osman Goni Nahid <nirobshitol@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/osmangoninahid/expressio/issues"
+  },
+  "homepage": "https://github.com/osmangoninahid/expressio#readme"
 }
