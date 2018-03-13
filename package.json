@@ -1,10 +1,10 @@
 {
-  "name": "expressio",
+  "name": "spready",
   "version": "1.0.0",
-  "description": "Expressio will help you to create a backend RESTFul including basic CRUD functionalities with NodeJS, Express.js, Mongoose",
+  "description": "Spready will help you to create a backend RESTFul including basic CRUD functionalities with NodeJS, Express.js, Mongoose",
   "main": "app.js",
   "bin": {
-    "expressio": "./bin/expressio.js"
+    "expressio": "./bin/spready.js"
   },
   "dependencies": {
     "args": "^3.0.4",
@@ -23,13 +23,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/osmangoninahid/expressio.git"
+    "url": "git+https://github.com/osmangoninahid/spready.git"
   },
   "keywords": ["nodejs", "generator", "express", "rest-api", "restful", "mongoose"],
   "author": "Osman Goni Nahid <nirobshitol@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/osmangoninahid/expressio/issues"
+    "url": "https://github.com/osmangoninahid/spready/issues"
   },
-  "homepage": "https://github.com/osmangoninahid/expressio#readme"
+  "homepage": "https://github.com/osmangoninahid/spready#readme"
 }

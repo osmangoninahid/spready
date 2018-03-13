@@ -1,28 +1,28 @@
-# Expressio
+# Spready
 
-Expressio will help you to create a backend RESTFul including basic CRUD functionalities with [NodeJS](https://nodejs.org/), [Express.js](https://expressjs.com/) and [MongoDB](https://www.mongodb.com/).
+Spready will help you to create a backend RESTFul including basic CRUD functionalities with [NodeJS](https://nodejs.org/), [Express.js](https://expressjs.com/) and [MongoDB](https://www.mongodb.com/).
 
 ## Install
 ```shell
-$ npm install -g expressio
+$ npm install -g spready
 ```
 ## use
 ```shell
 // Initialize project
-$ expressio init
+$ spready init
 $ cd [project_name]
 
 // Add new module
-$ expressio add-module ModuleName
+$ spready add-module ModuleName
 ```
 It should make a question, like:
   + Name of the project (It will create a folder in your current working directory and the folder name will be your project name)
 
 ### Display the command options with the -h option:
 ```sh
-$ expressio -h
+$ spready -h
 
-  Usage: express [options] [name]
+  Usage: spready [options] [name]
 
   Options:
 
