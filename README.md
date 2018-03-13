@@ -1,4 +1,5 @@
 # Spready
+[![npm version](https://badge.fury.io/js/spready.svg)](https://badge.fury.io/js/spready)
 
 Spready will help you to create a backend RESTFul including basic CRUD functionalities with [NodeJS](https://nodejs.org/), [Express.js](https://expressjs.com/) and [MongoDB](https://www.mongodb.com/).
 
