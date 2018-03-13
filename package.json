@@ -1,6 +1,6 @@
 {
   "name": "spready",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Spready will help you to create a backend RESTFul including basic CRUD functionalities with NodeJS, Express.js, Mongoose",
   "main": "app.js",
   "bin": {
