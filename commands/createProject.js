@@ -1,10 +1,9 @@
 const inquirer = require("inquirer");
 const ora = require("ora");
-const spinner = new ora({
-  text: "Creating your project",
+const Spinner = new ora({
+  text: "Creating your project....",
   spinner: process.argv[2]
 });
-
 const createPackage = require("../services/createPackage");
 const createStarterFiles = require("../services/createStarterFiles");
 const { createEnvVariables, createExampleEnvVariables } = require("../services/createEnvVariables");
@@ -24,18 +23,26 @@ function createProject() {
 }
 
 async function handleResponse(answers) {
+  Spinner.start();
   try {
-    spinner.start();
     const folderPath = await createPackage(answers["name"]);
     await createStarterFiles(folderPath);
+    Spinner.info("You are almost done");
     await createEnvVariables(folderPath);
     await createMongooseIntegration(folderPath);
-    spinner.succeed("Starter files created");
-    spinner.succeed("Logger files created");
-    spinner.succeed("Basic module files created");
+    Spinner.succeed("Starter files created");
+    Spinner.succeed("Logger files created");
+    Spinner.succeed("Basic module files created");
     await createExampleEnvVariables(folderPath);
-    spinner.stop();
+    Spinner.stop();
     console.log("You are Ready to hack!");
+    console.log();
+    console.log("   change directory:");
+    console.log("     cd %s", answers["name"]);
+    console.log();
+    console.log("   ************Configure Mongo Credentials into ./variables.env**********");
+    console.log();
+    console.log("   run the app:   npm run dev");
   } catch (err) {
     console.log(err);
   }

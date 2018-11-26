@@ -25,7 +25,14 @@
     "type": "git",
     "url": "git+https://github.com/osmangoninahid/spready.git"
   },
-  "keywords": ["nodejs", "generator", "express", "rest-api", "restful", "mongoose"],
+  "keywords": [
+    "nodejs",
+    "generator",
+    "express",
+    "rest-api",
+    "restful",
+    "mongoose"
+  ],
   "author": "Osman Goni Nahid <nirobshitol@gmail.com>",
   "license": "MIT",
   "bugs": {
